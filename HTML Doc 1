@@ -1,0 +1,27 @@
+<!--Lesson 1: XHTML used to make HTML more extensible and interoperable. 
+CSS is cascading style sheet language for presentation semantics.
+Wiki these things-->
+
+
+
+<html> <!--To close a tag use the slash-->
+
+<head>
+<title>My first title.</title>
+</head>
+
+<!--Always need html, head, title and body tags when creating a web page. 
+This is the first step.  Content of web page goes into body-->
+
+
+<body>
+
+My first web page. More to come.
+
+</body>
+
+
+
+
+
+</html>

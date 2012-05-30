@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+
+<head>
+<title>Learning Forms</title>
+
+<style type="text/css">
+
+
+
+</style>
+
+
+
+
+
+</head>
+
+
+<body>
+
+
+<form>
+First Name:<input type="text" name="firstname" maxlength="7"/><br /><br />
+Last Name:<input type="text" name="lastname" /><br /><br />
+Password:<input type="password" name="password" /><br /><br />
+Gender: 
+	<ul>
+		<input type="radio" name="gender" value="male"/> Guido <br />
+		<input type="radio" name="gender" value="female"/> Guidette <br />
+
+	</ul>
+<br />
+
+<!-- the name attribute will be used in javascript to identify variables 
+submit buttons: <input type="submit" name="submit" />
+this gives a button that says submit, but not because of the type or name.
+
+in order to cahnge what the button says, you must add a "value" attribute
+ the submit button alone does nothing, you need javascript.
+ 
+maxlength="" attribute is how you limit the length of inputs. 
+
+for text fields, putting a value="" attribute puts a text default inside the 
+field.  this can't disappear when people type unless you use javascript
+
+for radio or check down buttons, you need to add text just like a link
+
+using <ul> wihtout a <li> allows you to justify and space without having bullets
+classes or ids in CSS are probably better for this.
+-->
+
+What's your idea? <input type="text" name="firstname" value="Type your idea"/><br /><br />
+
+Do you own a pet? 
+	<ul>
+		<input type="checkbox" name="pet" value="Dog" /> Dog <br />
+		<input type="checkbox" name="pet" value="Cat" /> Cat <br />
+		<input type="checkbox" name="pet" value="Other" /> Other <br />
+	</ul>
+
+<br />
+
+
+<!--dropdown menu is not an "input" field, it's an "option" field and </option>
+that also requires use of the <select> tags
+
+-->
+What's the urgency?
+	<select name="urgency">
+		<option value="urgency"/>High</option>
+		<option value="Medium" />Medium</option>
+		<option value="Low" />Low</option>
+	</select>
+
+<br />
+<input type="submit" name="submit" value="Send"/>
+
+What do you think of this form?<br />
+<textarea  name="comments" rows="5" cols="40"></textarea>
+<!-- in a textarea, rows and cols change default size of the box
+textarea has rows and cols just as though it's a table
+-->
+</form>
+<br />
+
+
+
+</body>
+
+<html>

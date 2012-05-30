@@ -1,0 +1,264 @@
+<!-- Beginning of CSS lectures -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+
+<head>
+	<title>Testing CSS</title>
+
+<!-- CSS code requires the style tags below, 
+which must always be in between the head tags-->
+
+<!-- choose the tag in html (the selector) then in curly brackets put the attribute
+	you want to style, then define the style. always end with semi colon
+		
+	-selectors have the same name as tags in html
+	
+		<style type="text/css">
+		h1 {color: green;}  
+		
+		p {color: purple;}
+	
+		body {background-color: #778899;
+			font-size: 20px;
+			
+			background-image: url(yumspring.jpg);
+				background-size: 200px;
+				background-repeat: no-repeat;
+				background-position: 50px 50px; --pixels from left, pixels from top
+			
+		for more properties: http://www.w3schools.com/cssref/
+		
+		for h1 for example, there is padding, borders (solid, etc)
+		} 	
+	
+	</style>
+-->
+
+<!-- 
+in CSS for <p> tag, margin is the space around paragraphs, 
+margin-top is only top margin, same idea with left
+-->
+
+<!-- Links have 4 different states - default, visited, hover, active 
+a:link {} is the default state
+a:visited {} once the link is visited
+a:hover {} when the mouse is over the link
+a:active {} while the link is being clicked
+-->
+
+<!-- We want XHTML code to be as simple as possible and 
+edit properties in CSS.  It's much more elegant.  Only use XHTML to edit an
+individual cell property
+
+
+	table {	border:2px solid #000000;
+		width:200px;
+		height:200px;
+		padding:20px;
+		margin: 200px;
+		}
+		
+		td {border: 1px solid #000000;
+		padding:5px;
+		color:blue;
+		background-color:white;
+		}
+	
+	ul {list-style-type:none;}
+		
+-->
+
+<!-- using CSS to give the same properties to two selectors at once
+h1,p {color:yelow;}
+use <span> tags around words in xhtml and then edit in CSS to change a limited 
+selection
+
+h1,p  {color:yellow;} 
+		span {font-size: 25px;
+		color:blue;}
+
+-->
+
+
+<!-- Divs - SUPER IMPORTANT
+Divs are divisions/boxes that contain content and can be moved all over the website.
+They are used to separate sections of web pages. 
+http://www.w3schools.com/tags/tag_div.asp
+
+div {border: 3px solid #000000;
+			background-color: red;
+			width:100px;
+			height:50px;
+			position: absolute;
+			top: 50px;
+			left: 200px;
+			
+		}
+		
+		
+*****Classes*****
+Classes are what used to give unique properties to different instances of the same tag
+
+in xhtml, inside a tag put class="" as an attribute
+
+in css a period before the selector indicates it is a class
+
+you can give hte same class name to multiple/different tags
+
+	<style type="text/css">
+		.first {color: red;}
+		.second {color:blue;}
+	</style>
+	
+</head>
+<body>
+	<p class="first">my first paragraph</P>
+	<p class="second">my second paragraph<p>
+	
+	<h1 class="first">Test Header</h1>
+	...
+	
+*****IDs*****
+IDs are similar.
+
+use id="" in the xhtml tag
+but to select the ID in CSS us #
+
+BIG DIFFERNECE BTWN Classes and IDs is that uyou can use the class on more 
+than one tag, but ID can only be applied to one tag or div
+-->
+
+<!-- using an external CSS file -
+Make a file that is a .css extension
+In that file, you can get rid of the <style type...> tags
+In the html file, get rid of the CSS
+and add a tag with <link rel="stylesheet" type="text/css" href="style.css" />
+where style.css is the css file
+
+in the .css file, you don't need to have any html tags.
+-->
+
+<!--
+	<style type="text/css">
+		.first {color: red;}
+		#one{color:blue;}
+		#two{color:yellow;}
+		.unstyled li {display:inline;
+		
+		}
+		
+		
+	
+	</style>
+	
+	
+</head>
+
+<body>
+
+	<div id="one">my first paragraph</P>
+		<ul class="unstyled">
+		<li>test</li>
+		<li>best</li>
+		<li>rest</li>
+		</ul>
+		<ul>
+		<li>test2</li>
+		<li>test3</li>
+		<li>test4</li>
+		</ul>
+	<div id="two">my second paragraph<p>
+	
+	<h1 class="first">Test Header</h1>
+	
+
+-->
+
+
+
+<!-- position attributes
+absolute - when you apply this position, the additional positioning directions
+are applied to the tag relative to the whole web page, regardless of where the
+tag falls in the code.
+
+e.g. moving it from top 200px and left 200px will move it 200x200 out from the top
+corner
+
+relative - when you apply this position, the additional positioning
+diretcions you give the tag are applied to the tag relative to its original
+position in the tag
+
+e.g. moving it from top 200px and left 200px will move it 200x200 out from the tag's
+position in the code
+
+fixed - when you apply this position, the positioning directions will
+act in the same manner as absolute, but the tag will be fixed on the page
+even when you scroll down from its apparent position.
+-->
+
+
+<style type="text/css">
+
+	#alex {border:2px solid blue;
+			width: 50px;
+			position: fixed;
+			top:10px;
+			left:300px;
+	}
+	
+	
+	
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+	<div>John</div>
+	<div id="alex">Alex</div>
+	<div>James</div>
+	
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+	<p>gagebetavee</p>
+
+
+
+</body>
+</html>

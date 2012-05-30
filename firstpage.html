@@ -1,0 +1,138 @@
+<!--XHTML used to make HTML more extensible and interoperable. 
+CSS is cascading style sheet language for presentation semantics.
+Wiki these things-->
+
+<!-- DOCTYPE declaration must be above HTML tag - informs browser of the type of html
+- most websites use transitional -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html> <!--To close a tag use the slash-->
+
+<head>
+<title>My first title. More Things</title>
+</head>
+
+<!--Always need html, head, title and body tags when creating a web page. 
+This is the first step.  Content of web page goes into body-->
+
+
+<body>
+
+
+<h1>My header - h1</h1>
+
+
+<!--
+
+Text spacing:
+<p> Skips a double-spaced line 
+<br /> only goes to the next line
+
+-->
+
+
+My first <font color="red" size 5>webpage</font> is done,<br />
+and I like it.
+
+<!-- 
+
+Formatting:
+<strong> = bold
+<em> = italic
+<font color="blue"> font is the tag with color as the property,
+other properties include size
+This is basic text formatting without CSS
+
+-->
+
+<!--
+
+Links:
+<a href> tag has many attributes
+The a stands for anchor.
+Href stands for http reference
+-->
+
+<p>
+<a href="http://yumspring.com">Link to yumspring</a>
+</p>
+<p>
+<a href="secondpage.html">To Second Page</a> <!-- I'm not sure why this works. Same directory-->
+</p>
+
+
+<!--
+
+Images/Links:
+<img src="" /> slash on the inside
+Can nest inside of link tags.
+size attributes are height and width
+If you only change one, the ratio stays the same.
+	
+-->
+<br />
+<a href="http://yumspring.com"><img src="yumspring.jpg" height="200" /></a>
+
+
+<!--
+
+Tables:
+frame with <table> tags
+<tr> table row
+<td> cell data - each <td></td> is a column
+border attribute goes in table tag for whole table
+<th> header for a column
+add colspan and number of columns extend a cell horizontally -useful for headers
+rowspan is also an attribute that can be used to extend a cell vertically
+-width can be expressed as a % of a webpage
+-cellpadding gives space from <td> to the outside of each cell
+-cellspacing adds space around the cells
+-->
+
+<table border="1" cellspacing="10px" align="center">
+		<tr>
+			<th colspan="2">My Favorite Things</th>
+		</tr>
+		<tr>
+			<th>Sports</th>
+			<th>Cars</th>		
+		</tr>
+		<tr>
+			<td>golf</td>
+			<td>ferrari</td>
+		</tr>
+		<tr>
+			<td>baseball</td>
+			<td>lambourghini</td>
+		</tr>
+		<tr>
+		<td colspan="2"> <img src="http://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" ></td>
+		</tr>
+</table>
+<br />
+
+<!-- lists
+<ul> unordered list - bullet
+<ol> ordered list - numbers
+<li></li> list items
+-->
+<ul>
+	<li>earth</li>
+	<li>mars</li>
+	<li>saturn</li>
+</ul>
+<ol>
+	<li>earth</li>
+	<li>mars</li>
+	<li>saturn</li>
+</ol>
+<br />
+
+
+
+
+</body>
+</html>
