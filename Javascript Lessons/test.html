@@ -89,6 +89,14 @@ for(a=0;a<=9;a++)
 document.write("a"+" Hello<br />")
 
 }
+
+var cars = new Array("ferrari","BMW","Mercedes")
+for(i=0;i<cars.length;i++)
+{
+document.write(cars[i])
+
+}
+
 */
 
 /*---------- WHILE LOOP
@@ -100,6 +108,7 @@ use a do... while loop and the code will be executed at least once
 even if the condition is true.
 */
 
+/*
 var i=0;
 while(i<=10)
 {
@@ -109,17 +118,82 @@ while(i<=10)
 }
 
 
+var cars = new Array("ferrari","BMW","Mercedes")
+for(i=0;i<cars.length;i++)
+{
+document.write(cars[i]+"<br />	")
+
+}
 
 
+---------------BREAK and CONTINUE in LOOPS
+
+Break allows you to end a loop.
+Continue allows you to jump or skip an item in the loop
 
 
+var i=0;
+
+for (i=0;i<=10;i++)
+
+{
+if(i==3)
+	{
+		continue;
+	}
+//this skips the number 3
+if(i==5)
+	{
+		break;
+	}
+//this ends the loop at 5, before printing 5
+	document.write("this is loop number "+i+"<br />");
+}
+
+---------------FUNCTIONS
+Function is a bunch of code stored in a name
+*/
+/*
+function test()
+{
+	document.write("this is my first function!<br />");
+}
+
+test();
 
 
+Functions can also have parameters.
+ return prints the value of a variable
 
 
+function test(x,y)
+{
+
+z=x+y;
+return z
+
+}
+
+alert(test(2,3));
 
 
+---------------- METHODS AND PROPERTIES
 
+Properties are the values associated with an object.
+.length is a property that returns the length of a string
+
+Methods are the actions that can be performed on objects.
+methods are used in the same way as properties with a period, but they have parentheses
+like functions. Methods are kind of like built in functions
+
+
+*/
+
+var x = "victor"
+
+document.write(x.length);
+document.write(x.toUpperCase());
+document.write(x.fontcolor("red"));
 
 </script>
 
