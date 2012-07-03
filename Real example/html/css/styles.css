@@ -1,0 +1,424 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	margin:0 0 0 0;
+	background:url(../images/headerbg.jpg) repeat-x top #9adbe5;
+}
+
+#container {
+	margin:0px auto;
+	width:980px;
+}
+
+#header {
+	height:108px;
+}
+
+#header img {
+	border:0;
+}
+
+.corner-8{
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	border-radius:8px;
+	/*behavior: url("../files/PIE.htc");*/
+	abehavior: url("/files/iecss3.htc");
+}
+
+#box {
+	background:#FFFFFF;
+	padding:40px 30px;
+}
+
+#box p{
+	
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:19px;
+	color:#535353;
+	margin:10px 0 0 0;
+}
+
+#box a:link{color:d96d03; text-decoration:none;}
+#box a:visited{color:d96d03; text-decoration:none;}
+#box a:hover{color:d96d03; text-decoration:none;}
+#box a:active{color:d96d03; text-decoration:none;}
+
+#box h1{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:25px;
+	line-height:25px;
+	color:#232323;
+}
+
+.corner-20{
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	-khtml-border-radius:20px;
+	border-radius:20px;
+	/*behavior: url("../files/PIE.htc");*/
+	abehavior: url("/files/iecss3.htc");
+}
+
+.topbox {
+	background:#FFF;
+	padding:0 80px 0 80px;
+	position:relative;
+	left:0px;
+	top:0px;
+	z-index:1;
+}
+
+.budlucy {
+	position:relative;
+	left:-90px;
+	top:-280px;
+	z-index:2;
+	height:247px;
+	margin-bottom:-247px;
+}
+
+.buttonstrip {
+	background:url(../images/roundbg.gif) no-repeat;
+	height:81px;
+	text-align:center;
+}
+
+.buttonstrip img {
+	margin:0 23px 0 23px;
+	border:0;
+}
+
+.tile {
+	margin:0 12px 0 12px;
+}
+
+.tile p {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:17px;
+	color:#535353;
+	text-align:center;
+	width:245px;
+	margin:10px 0 0 0;
+}
+	
+
+/*
+*
+*  Site Strucure
+*
+*/
+.clear{
+	clear:both;
+}
+.clear-right{
+	clear:right;
+}
+.clear-left{
+	clear:left;
+}
+.right{
+	float:right;
+}
+.left{
+	float:left;
+}
+.center{
+	text-align: center;
+}
+.hide{
+	display:none;
+}
+.show{}
+.invisible{
+	visibility: hidden
+}
+.visible{
+	visibility: visible;
+}
+.rel{
+	position: relative;
+}
+.abs{
+	position: absolute;
+}
+.fix{
+	position: fixed;
+}
+.bld{
+	font-weight:bold;
+}
+
+/*
+*
+*  Links
+*
+*/
+a:focus,
+input:focus{
+	outline:none;
+}
+a:link,
+a:visited{
+	color:#F19300;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+#footer-wrapper a:link,
+#footer-wrapper a:visited,
+#footer-wrapper a:hover{
+	color:#054B68;
+	text-decoration: none;
+	font-weight: bold;
+}
+li > a:link,
+li > a:visited,
+.privacy-txt > a:link,
+.privacy-txt > a:visited,
+.terms-txt > a:link,
+.terms-txt > a:visited{
+	color:#1173AC;
+	text-decoration: none;
+	font-weight: bold;
+}
+li > a:hover,
+.privacy-txt > a:hover,
+.terms-txt > a:hover{
+	color:#F19300;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.top:link,
+.top:visited{
+	font-size:9px;
+	text-decoration: none;
+	color:#F19300;
+}
+.top:hover{
+	text-decoration: underline;
+}
+.blue-link:link,
+.blue-link:visited{
+	color: #1d609f;
+	text-decoration: none;
+	font-size: 12px;
+}
+.blue-link:hover{
+	text-decoration: underline;
+}
+.blue-link-smaller:link,
+.blue-link-smaller:visited{
+	color: #1d609f;
+	text-decoration: none;
+	font-size: 10pt;
+}
+.blue-link-smaller:hover{
+	text-decoration: underline;
+}
+.black-link:link,
+.black-link:visited{
+	color: #000;
+	text-decoration: none;
+
+}
+.black-link:hover{
+	text-decoration: underline;
+}
+
+img, table {
+	border: none;
+}
+a.tip-trigger{
+	margin-top:4px;
+}
+.products .tip{
+	position:absolute;
+	font-size:12px;
+	padding:3px;
+	color:#fff;
+	background:#1d1d1d;
+	display:none;
+}
+.product .tip{
+	position:absolute;
+	z-index:15000;
+	margin-left:-20px;
+	font-size:12px;
+	padding:3px;
+	color:#fff;
+	background:#1d1d1d;
+	display:none;
+}
+
+/*
+*
+*  Fonts
+*
+*/
+body,
+p,
+h1,
+h2{
+	font-family:Arial,Helvetica,sans-serif;
+}
+p{
+	font-size: 12px;
+	line-height: 18px;
+	color:#000;
+	margin-top:0;
+}
+h1.title,
+h2.sub-title{
+	margin:10px 0;
+}
+h1{
+	margin:0;
+	color:#054B68;
+	font-size:22px;
+}
+h1.white{
+	color:#fff;
+	font-size: 17px
+}
+h2{
+	margin:0;
+	color:#B04701;
+	font-size:23x;
+}
+.newh2{
+	font-family:Verdana;
+	font-weight:bold;
+	color: #DF4505;
+	font-size:16.5pt;
+	/*width:570px;*/
+}
+.redBold{
+	color:#f00;
+	font-weight:bold;
+}
+h3{
+	font-size:17px;
+	color: #B04701;
+	margin:0;
+}
+h4{
+	margin:0 0 5px 0;
+	font-size:18px;
+	font-weight:600;
+	font-style: italic;
+	color: #1d609f;
+}
+h6{
+	color: #054B68;
+	margin: 0;
+}
+.leadin{
+	font-weight: bold;
+}
+#footer-wrapper{
+	font-size:10px;
+	color:#054B68;
+	text-decoration: none;
+}
+li{
+	font-size:11px;
+	line-height: 18px;
+}
+.txt-center{
+	text-align: center;
+}
+.txt-right{
+	text-align: right;
+}
+.txt-left{
+	text-align: left;
+}
+.note{
+	font-size: 9px;
+}
+.red{
+	color:#f00;
+}
+
+.grey{
+	color:#757575;
+}
+.greyBg{
+	background-color:#e8e8e8;
+}
+.questionstext {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	font-weight:bold;
+	line-height:16px;
+	height:16px;
+	margin-right:6px;
+}
+
+
+/* New Footer */
+.full-footer-wrapper .legal-links a,
+.full-footer-wrapper .company-info-links a{
+	color:#000 !important;
+	font-weight:normal;
+}
+.full-footer-wrapper .footer-facebook-link-wrapper .footer-facebook-text,
+.full-footer-wrapper .footer-email-link-wrapper .footer-email-text{
+	font-size:10pt;
+	font-family:Tahoma, sans-serif !important;
+	font-weight:normal;
+	color:#000;
+}
+.footer-made-with-love{
+	font-weight:normal !important;
+	color:#000 !important;
+}
+.footer-made-with-love:hover{
+	text-decoration:underline;
+}
+
+.footer-made-with-love{
+	font-weight:normal !important;
+	color:#000 !important;
+}
+.footer-made-with-love:hover{
+	text-decoration:underline;
+}
+.footer-pics-wrapper{
+	background-color: #dbf2f9;
+    position: relative;
+    width: 190px;
+	padding:4px;
+}
+.footer-pics-wrapper a{
+	text-decoration:none;
+}
+.footer-pics-wrapper a:hover{
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity:0.5;
+	cursor:pointer;
+}
+.in-footer-pic{
+	height: 32px;
+	width: 32px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.footer-icon-text{
+	font-weight:700;
+	font-size:10pt;
+	font-color:#000;
+}
+.footer-shadow-up{
+	margin-top:0px;
+	margin-bottom:0px;
+/* End New Footer */
